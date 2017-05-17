@@ -1,0 +1,28 @@
+body{
+      background: black;
+      color:red;
+      background-image: url("https://sqwabb.files.wordpress.com/2015/07/ninja-cat-crop.jpg");
+      text-align: center;
+}
+
+.svg{
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><linearGradient id='gradient'><stop offset='10%' stop-color='%23F00'/><stop offset='90%' stop-color='%23fcc'/> </linearGradient><rect fill='url(%23gradient)' x='0' y='0' width='100%' height='100%'/></svg>");
+  color:purple;
+}
+
+.referencedSVG{
+  background-image:url("./simple.svg");
+  color:white;
+}
+
+.svgWithJS{
+  background-image:url("./malicious.svg");
+}
+
+.jsAsData{
+  behavior:url("data:text/javascript;base64,YWxlcnQoJ2FzYWRhc2QnKTsK");
+}
+
+.sideLoadedHtml::after{
+  content: url('data:image/svg+xml;%20charset=utf8,%20%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2260%22%20width%3D%22200%22%3E%0A%0A%20%20%3CforeignObject%20y%3D%220%22%20x%3D%220%22%20height%3D%22100%25%22%20width%3D%22100%25%22%3E%0A%09%3Cdiv%20style%3D%22color%3A%20blue%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%0A%09%09%3Cobject%20type%3D%22text%2Fhtml%22%20data%3D%22http%3A%2F%2Flocalhost%3A5000%2FevilPage.html%22%3E%3C%2Fobject%3E%0A%09%3C%2Fdiv%3E%0A%20%20%3C%2FforeignObject%3E%0A%3C%2Fsvg%3E');
+}

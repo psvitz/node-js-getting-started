@@ -1,0 +1,1 @@
+alert('js from malicious.js');

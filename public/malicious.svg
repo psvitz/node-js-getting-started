@@ -1,0 +1,7 @@
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <script xlink:href="./malicious.js" />
+  <script><![CDATA[
+    console.log("svg js from css referenced svg");
+  ]]></script>
+</svg>
